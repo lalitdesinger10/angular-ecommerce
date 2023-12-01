@@ -1,0 +1,39 @@
+<section class="" style="background-color: #eee;">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">My Orders</h1>
+                <table class="table spacedTable">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Order</th>
+                            <th scope="col">Order Id</th>
+                            <th scope="col">Pirce</th>
+                            <th scope="col">Contact No.</th>
+                            <th scope="col">Email Id</th>
+
+                            <th scope="col">Address</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                            
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orderData">
+                            <td> 
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                                    class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;"></td>
+                            <td># {{order.id}}</td>
+                            <td>{{ order.totalPrice | number : '1.2-2'}}</td>
+                            <td>{{order.contact}}</td>
+                            <td>{{order.email}}</td>
+                            <td>{{order.address}}</td>
+
+                            <td>In progress</td>
+                            <td>
+                               <button class="btn btn-custom" (click)="cancelOrder(order.id)">Cancel Order</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+</section>

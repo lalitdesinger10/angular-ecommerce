@@ -1,0 +1,31 @@
+<div class="container my-5 gap-15">
+    <div class="head">
+    <h1>All Product List</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia illo quidem esse inventore voluptas adipisci magnam mollitia labore, beatae earum dolor similique ducimus quaerat odit obcaecati non quod? Harum.</p>
+    <P class="error">{{productMessage}}</P>
+    </div>
+    <div class="productlist row row-gap-5">
+<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 productcolumn" *ngFor="let item of productList">
+    <div class="productItem">
+    <div class="productimg"><img src={{item.image}}/></div>
+    <div class="productDetails">
+        <div class="detail">
+    <div class="productName">{{item.productname}}
+       <small class="colordown">({{item.category}})</small> 
+    </div>
+    <div>{{item.description}}</div>
+
+    <div class="d-flex justify-space gap-15">
+    <div class="price">Price:{{item.price}} </div>
+    <div class="color">Color: {{item.color}}</div>
+    </div>
+</div>
+    <div class="d-flex justify-space gap-15">
+        <a routerLink="/seller-update-product/{{item.id}}" class="btn btn-custom">Edit</a>
+        <button class="btn btn-custom-outline" (click)="deleteProduct(item.id)">Delete</button>
+        </div>
+</div>
+</div>
+</div>
+</div>
+</div>

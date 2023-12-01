@@ -1,0 +1,46 @@
+<ngb-carousel *ngIf="popularProducts">
+	<ng-template *ngFor="let item of popularProducts"  ngbSlide>
+		<div class="picsum-img-wrapper">
+			<a routerLink="/product-details/{{item.id}}"><img src={{item.image}} alt="Random first slide" /></a>
+		</div>
+		<div class="carousel-caption">
+			<h3>First slide label</h3>
+			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+		</div>
+	</ng-template>
+</ngb-carousel>
+<div class="container my-5 gap-15">
+    <div class="head">
+    <h1>New Trendy Products</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia illo quidem esse inventore voluptas adipisci magnam mollitia labore, beatae earum dolor similique ducimus quaerat odit obcaecati non quod? Harum.</p>
+    </div>
+    <div class="productlist row row-gap-5">
+<div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 productcolumn" *ngFor="let item of trendyProducts">
+    <div class="productItem">
+    <div class="productimg"><img src={{item.image}}/></div>
+    <div class="productDetails">
+		<div class="detail">
+    <div class="productName">{{item.productname}}
+       <small class="colordown">({{item.category}})</small> 
+    </div>
+    <div>{{item.description}}</div>
+
+    <div class="d-flex justify-space gap-15">
+    <div class="price">Price:{{item.price}} </div>
+    <div class="color">Color: {{item.color}}</div>
+    </div>
+</div>
+    <div class="d-flex justify-space gap-15">
+        <a routerLink="/product-details/{{item.id}}" class="btn btn-custom">View Details</a>
+        <button class="btn btn-custom-outline">Add to Cart</button>
+        </div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-grid justify-content-center my-5">
+<a routerLink="/seller-home" class="btn btn-custom-outline d-inline-flex">View All</a>
+</div>
+
+
+</div>

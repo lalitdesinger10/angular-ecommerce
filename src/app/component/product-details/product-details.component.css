@@ -1,0 +1,9 @@
+.imgaeShow{width: 100%;max-height:500px; height:100%; border: 1px solid rgba(var(--borderClr),.1);}
+.imgaeShow img{object-fit: contain;max-height:100% ;}
+.productDetails .productName{ color:rgba(var(--textClr),1); font-size:40px;}
+.colorshow{width:40px;height:40px; border: 1px solid rgba(var(--borderClr),.5); border-radius: calc(var(--borderRad)*10);}
+.price{font-size: 30px; font-weight: 500; }
+.all-desc{border-top: 1px solid rgba(var(--borderClr),.1); margin-block-start: 50px; padding-block-start: 40px;}
+.btn{font-size: 24px;min-width: 180px;}
+.count-increse .btn{min-width:60px;margin-block-start: 0px; border-radius: 0px;}
+.count-increse .control-input{ border-radius: 0px; width: 100px;}

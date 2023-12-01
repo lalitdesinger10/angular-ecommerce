@@ -1,0 +1,42 @@
+<div class="container my-5">
+    <div class="row product-details" *ngIf="productData">
+        <div class="imge col-md-4">
+            <div class="imgaeShow d-flex align-items-center justify-content-center py-5">
+                <img src="{{productData.image}}" />
+            </div>
+        </div>
+        <div class="details col-md-8">
+            <div class="productDetails p-0 px-md-5">
+                <div class="productName">{{productData.productname}}</div>
+                <div class="price">Price: ${{productData.price}} </div>
+
+                <div>Category: {{productData.category}} </div>
+                <div class="color  d-flex align-items-center gap-15">Color: <span [style.backgroundColor]="productData.color" class="colorshow d-block"></span></div>
+                <div>Description:
+                    <p>{{productData.description}}</p>
+                </div>
+                <div class="mb-3 w-25" >
+                    ITEMS (required):
+                    <div class="d-flex count-increse mt-2">
+                        <button class="btn btn-custom" (click)="handleQuantity('min')">-</button>
+                        <input type="text" value="{{productQuantity}}" class="control-input text-center"/>
+                        <button class="btn btn-custom"  (click)="handleQuantity('plus')">+</button>
+                    </div>
+                   
+                </div>
+
+            <div class="d-inline-flex gap-15">
+                <a class="btn btn-custom">Buy Now</a>
+                <button *ngIf="!removeCart" class="btn btn-custom-outline" (click)="AddtoCard()">Add to Cart</button>
+                <button *ngIf="removeCart" class="btn btn-custom-outline" (click)="removeToCart(productData.id)">Remove to Cart</button>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="all-desc">
+    <h2>Full Description</h2>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem possimus nulla assumenda, nam id, soluta recusandae incidunt quaerat ullam itaque optio excepturi! Odit natus possimus aspernatur, perferendis, totam iusto assumenda fugit delectus iste nisi rem distinctio corrupti cupiditate et. Voluptatibus at dicta omnis exercitationem eaque sit, earum fuga nulla consequatur accusantium ipsam dolores hic ullam dolorem veniam eum quidem architecto, qui magni! Nisi facere sint earum, blanditiis ullam architecto delectus sequi maiores laudantium, dolorem obcaecati placeat, debitis tempora quisquam tempore incidunt corporis esse! Deserunt vel, quasi tempore excepturi, odio quod dolorum iusto voluptatum debitis laboriosam consequuntur omnis fugiat incidunt in minus accusamus quam dicta, quibusdam veritatis adipisci autem numquam soluta architecto! Veritatis aperiam voluptatum officiis impedit similique? Fugiat, non earum. Aut libero et voluptates dolore impedit, debitis similique, incidunt odit architecto numquam quas officia, doloremque ratione sunt autem. In corrupti illo nisi. Est, quis magni beatae soluta error, quo aspernatur perferendis dicta ullam libero unde quas ab ducimus tempore, corrupti sequi sapiente dolorum adipisci impedit. Delectus fuga earum assumenda, deleniti nobis excepturi blanditiis quibusdam numquam repellendus? Commodi alias eveniet quasi dolor temporibus, et, inventore animi ratione magnam, ut itaque assumenda expedita voluptate nam. Fugit similique accusamus sapiente ut corrupti, delectus ad animi dolor, modi inventore reiciendis repellat tempore nulla molestiae consequuntur voluptate? Tempore consequuntur suscipit quasi tempora iure! Reiciendis, natus deserunt obcaecati impedit libero sit placeat neque ullam voluptates amet commodi cumque repudiandae officiis veniam doloremque, praesentium quos architecto! Animi ipsum consequatur amet reiciendis quia error. Quibusdam deleniti vel optio ullam, incidunt tenetur cumque eos molestiae fugit facere animi officiis maiores explicabo accusantium, deserunt minima dignissimos quasi amet aspernatur sint unde dolorem tempore ipsa? Animi non esse quia saepe architecto impedit dignissimos, velit atque placeat nobis nemo eveniet sequi, doloremque libero quod eos. Asperiores eveniet magnam dolorem quae sit, autem alias distinctio dolores amet odit esse officiis ipsam totam, quisquam porro unde enim iste ratione rem repudiandae repellendus at? Ad impedit numquam debitis provident, voluptas suscipit in repellendus incidunt totam similique rem aspernatur non est exercitationem sunt architecto, excepturi perferendis illo odio minus aliquid. Perspiciatis, exercitationem eligendi fuga iste nam nemo debitis. Nisi impedit neque possimus vitae. Optio dicta nemo nihil eius reprehenderit quae accusantium distinctio porro deleniti minima provident repudiandae reiciendis alias modi esse consequatur tenetur eaque, commodi possimus vitae, eum nulla doloribus pariatur eos. Vitae aut non maxime sunt odio? Officia culpa, corrupti eveniet necessitatibus quam laborum ducimus, aliquam dolores numquam at repellat soluta nulla cumque! Quia maxime a aperiam eius perspiciatis beatae nihil voluptate error. Minus itaque nesciunt, rem cumque assumenda odit officiis molestiae! Ullam ex commodi assumenda nulla. Ut inventore saepe porro soluta earum. Maiores deleniti pariatur sunt hic ut iste expedita porro? Itaque commodi magnam iure alias assumenda unde nesciunt rerum et, libero provident quasi repellendus facere dolorem delectus quia perferendis odit cupiditate mollitia placeat totam soluta? Molestias quibusdam veritatis, voluptatem corporis blanditiis sapiente cupiditate dicta maiores placeat amet labore inventore debitis doloremque corrupti ab dolorem, numquam nulla illum delectus eius in cum. Quas, deleniti.</p>
+</div>
+</div>

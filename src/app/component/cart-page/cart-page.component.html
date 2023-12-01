@@ -1,0 +1,107 @@
+<section class="" style="background-color: #eee;">
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Shoping Cart</h1>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col">
+          <div class="card">
+            <div class="card-body p-4">
+  
+              <div class="row">
+  
+                <div class="col-lg-8">
+                  <h5 class="mb-3"><a routerLink="/" class="text-body"><i
+                        class="fas fa-long-arrow-alt-left me-2"></i>Continue shopping</a></h5>
+                  <hr>
+  
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                      <p class="mb-1">Shopping cart</p>
+                      <p class="mb-0">You have 4 items in your cart</p>
+                    </div>
+                </div>
+  
+                  <div class="card mb-3" *ngFor="let cart  of cartData">
+                    <div class="card-body">
+                      <div class="d-flex gap-3  align-items-center">
+                        <div class="d-flex flex-row align-items-center">
+                          <div>
+                            <img
+                              src="{{cart.image}}"
+                              class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                          </div>
+                          <div class="ms-3">
+                            <h5 class="m-0">{{cart.productname}}</h5>
+                         
+
+                            <!-- <p class="small mb-0">256GB, Navy Blue</p> -->
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center gap-3">
+                            <h5 class="fw-normal mb-0 d-flex text-nowrap">Quantity: {{cart.quantity}}</h5>
+                            <h5 class="mb-0 d-flex text-nowrap">Price: {{cart.price}}</h5>
+                          <div style="width: 60px; text-align: center;">
+                          <button class="btn btn-custom text-nowrap" (click)="removeToCart(cart.id)"><i class="fas fa-trash-alt"></i> Delete Item</button>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-4">
+  
+                  <div class="card bg-gray-200 rounded-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="mb-0">Summry</h5>
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                          class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                      </div>
+  
+                    
+ 
+                      <hr class="my-4">
+  
+                      <div class="d-flex justify-content-between">
+                        <p class="mb-2">Amount</p>
+                        <p class="mb-2">{{priceSummary.price | number : '1.2-2'}}</p>
+                      </div>
+  
+                      <div class="d-flex justify-content-between">
+                        <p class="mb-2">Tax</p>
+                        <p class="mb-2">{{priceSummary.tax | number : '1.2-2'}}</p>
+                      </div>
+  
+                      <div class="d-flex justify-content-between">
+                        <p class="mb-2">Delivery</p>
+                        <p class="mb-2">{{priceSummary.delivery | number : '1.2-2'}}</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="mb-2">Discount</p>
+                        <p class="mb-2">{{priceSummary.discount | number : '1.2-2'}}</p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-4">
+                        <p class="mb-2">Total(Incl. taxes)</p>
+                        <p class="mb-2">{{priceSummary.total | number : '1.2-2'}}</p>
+                      </div>
+  
+                      <button type="button" class="btn btn-info btn-block btn-lg" (click)="checkout()">
+                        <div class="d-flex justify-content-between">
+                          <span>{{priceSummary.total | number : '1.2-2'}}</span>
+                          <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                        </div>
+                      </button>
+  
+                    </div>
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

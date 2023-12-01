@@ -1,0 +1,39 @@
+<div class="form-box">
+    <div class="form-seller sign-up">
+    <div>
+    <h1 class="me-0">Add New Product</h1>
+    <p>{{addProductMessage}}</p>
+    </div>
+    <form #addProduct="ngForm" (ngSubmit)="submitProduct(addProduct.value)">
+    <div class="form-group">
+        <label class="label-control">Product Name</label>
+        <input type="text" class="control-input" name="productname" ngModel placeholder="Please Enter Product Name"/>
+    </div>
+    <div class="form-group">
+        <label class="label-control">Price</label>
+        <input type="text" class="control-input" name="price" ngModel placeholder="Please Enter Price"/>
+    </div>
+    <div class="form-group">
+        <label class="label-control">Product Color</label>
+        <input type="text" class="control-input" name="color" ngModel placeholder="Please Enter Product Color"/>
+    </div>
+    <div class="form-group">
+        <label class="label-control">Product Category</label>
+        <input type="text" class="control-input" name="category" ngModel placeholder="Please Enter Product Category"/>
+    </div>
+    <div class="form-group">
+        <label class="label-control">Product Image</label>
+        <input type="text" class="control-input" name="image" ngModel placeholder="Please Enter Product Image"/>
+    </div>
+    <div class="form-group">
+        <label class="label-control">Product Description</label>
+        <textarea type="text" class="control-input" name="description" ngModel placeholder="Please Enter Product Description"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <button class="btn-custom btn-block btn-lg"> Add Product</button>
+    </div>
+    
+    </form>
+    </div>
+    </div>

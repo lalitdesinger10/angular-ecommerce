@@ -1,0 +1,7 @@
+.spacedTable {
+    border-spacing: 0 10px;
+    border-collapse: separate;
+}
+table td{vertical-align: middle; padding-inline: 15px;}
+table th{background:rgba(var(--themeClr),.9); padding:15px; color:rgba(var(--whiteClr),1);}
+.spacedTable tr:nth-child(odd) td {background:#fff;}

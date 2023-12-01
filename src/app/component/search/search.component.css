@@ -1,0 +1,5 @@
+.search-item{padding-block:15px; border-block-end: 1px solid rgba(var(--borderClr),.3);}
+.search-item p{margin: 0;}
+.imageBox{  height:200px;}
+.imageBox img{height: 100%; object-fit: cover;}
+.productDetails .productName a{color: rgba(var(--textClr), 1); text-decoration: none;}

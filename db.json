@@ -1,0 +1,247 @@
+{
+  "seller": [
+    {
+      "name": "sandeep kumar",
+      "email": "sandeep@admin.com",
+      "password": "admin@123",
+      "id": 1
+    },
+    {
+      "name": "arvind",
+      "email": "arvind@admin.com",
+      "password": "admin@123",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "productname": "Micromax",
+      "price": "9999",
+      "color": "Silver",
+      "category": "Tablet",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/mobile/x/a/4/nokia-lumia-900-original-imadddewgbaggfdm.jpeg?q=90",
+      "description": "Nokia Mobile Is Best",
+      "id": 1
+    },
+    {
+      "productname": "One Plus",
+      "price": "29999",
+      "color": "Light Gray",
+      "category": "Mobile",
+      "image": "https://oasis.opstatics.com/content/dam/oasis/page/press-photos/10t/green/10T-1.png",
+      "description": "One Plus Is a good Product ",
+      "id": 2
+    },
+    {
+      "productname": "Micromax",
+      "price": "7749",
+      "color": "Purple",
+      "category": "Mobile",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/mobile/x/a/4/nokia-lumia-900-original-imadddewgbaggfdm.jpeg?q=90",
+      "description": "Good product page link this",
+      "id": 3
+    },
+    {
+      "productname": "Face Wash by Olay Regenerist",
+      "price": "499",
+      "color": "Pink",
+      "category": "cream",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-1.jpg",
+      "description": "Best Cream",
+      "id": 4
+    },
+    {
+      "productname": "Kabuki Makeup Brush",
+      "price": "999",
+      "color": "Purple",
+      "category": "Body lostion",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/featured/featured-3.png",
+      "description": "Body lotions best",
+      "id": 5
+    },
+    {
+      "productname": "Organic Face Sunscreen",
+      "price": "1499",
+      "color": "Light Gray",
+      "category": "Sunscreen",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-3.jpg",
+      "description": "Best Product",
+      "id": 6
+    },
+    {
+      "productname": "Pure Cosmetics Lip Gloss",
+      "price": "1999",
+      "color": "Silver",
+      "category": "Lip Gloss",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-4.jpg",
+      "description": "Best Product",
+      "id": 7
+    },
+    {
+      "productname": "Grande Cosmetics Grande",
+      "price": "6999",
+      "color": "Pink",
+      "category": "Cosmetics Grande",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-8.jpg",
+      "description": "Is the best Grande ",
+      "id": 9
+    },
+    {
+      "productname": "Crushed Liquid Lip - Cherry Crush",
+      "price": "699",
+      "color": "Green",
+      "category": "Cherry Crush",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/featured/featured-2.png",
+      "description": "Best Quality's Product",
+      "id": 10
+    },
+    {
+      "productname": "Mega Waterproof Concealer - 125 Bisque",
+      "price": "9999",
+      "color": "Pink",
+      "category": "125 Bisque",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/featured/featured-3.png",
+      "description": "Molestias internos et commodi tempora dolores sapiente sed iste.",
+      "id": 11
+    },
+    {
+      "productname": "Matte Liquid Lipstick & Lip Liner",
+      "price": "19999",
+      "color": "Light Red",
+      "category": "Lip Liner",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/featured/featured-1.png",
+      "description": "Molestias internos et commodi tempora dolores sapiente sed iste.",
+      "id": 12
+    }
+  ],
+  "user": [
+    {
+      "name": "Sarika",
+      "email": "sarika@user.com",
+      "password": "admin@123",
+      "id": 1
+    },
+    {
+      "name": "Lalit Kumar",
+      "email": "lalit@user.com",
+      "password": "admin@123",
+      "id": 2
+    },
+    {
+      "name": "Om",
+      "email": "om@user.com",
+      "password": "admin@123",
+      "id": 3
+    },
+    {
+      "name": "ddsds",
+      "email": "dsfsd@dd.co",
+      "password": "admindsaf",
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "productname": "Pure Cosmetics Lip Gloss",
+      "price": "1999",
+      "color": "Silver",
+      "category": "Lip Gloss",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-4.jpg",
+      "description": "Best Product",
+      "quantity": 1,
+      "productId": 7,
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "productname": "Kabuki Makeup Brush",
+      "price": "999",
+      "color": "Purple",
+      "category": "Body lostion",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/featured/featured-3.png",
+      "description": "Body lotions best",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "productname": "Pure Cosmetics Lip Gloss",
+      "price": "1999",
+      "color": "Silver",
+      "category": "Lip Gloss",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-4.jpg",
+      "description": "Best Product",
+      "quantity": 1,
+      "userId": 3,
+      "productId": 7,
+      "id": 8
+    },
+    {
+      "productname": "Pure Cosmetics Lip Gloss",
+      "price": "1999",
+      "color": "Silver",
+      "category": "Lip Gloss",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-4.jpg",
+      "description": "Best Product",
+      "quantity": 1,
+      "userId": 3,
+      "productId": 7,
+      "id": 9
+    },
+    {
+      "productname": "Organic Face Sunscreen",
+      "price": "1499",
+      "color": "Light Gray",
+      "category": "Sunscreen",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-3.jpg",
+      "description": "Best Product",
+      "quantity": 1,
+      "userId": 3,
+      "productId": 6,
+      "id": 10
+    },
+    {
+      "productname": "Organic Face Sunscreen",
+      "price": "1499",
+      "color": "Light Gray",
+      "category": "Sunscreen",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-3.jpg",
+      "description": "Best Product",
+      "quantity": 6,
+      "userId": 1,
+      "productId": 6,
+      "id": 11
+    }
+  ],
+  "orders": [
+    {
+      "email": "rahul.singh@venturepact.com",
+      "contact": "2352152536",
+      "address": "Noida",
+      "totalPrice": 57015.1,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "lalit-2@outgrow.co",
+      "contact": "9958904263",
+      "address": "Ghaizabad",
+      "totalPrice": 11098.9,
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}

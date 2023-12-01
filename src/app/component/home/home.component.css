@@ -1,0 +1,3 @@
+.carousel{background: rgba(var(--bgblack),1); height:450px;}
+.picsum-img-wrapper{width:100%; height: 250px;text-align: center; padding-block: 20px;}
+.picsum-img-wrapper img{object-fit: cover; height: 100%;    text-align: center;}

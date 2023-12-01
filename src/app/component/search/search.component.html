@@ -1,0 +1,27 @@
+<div class="container my-5">
+<div class="head">
+    <h1>Search Result</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis, repudiandae totam quaerat odio non id fugit nihil nemo error praesentium nisi consequuntur cumque possimus atque fugiat nostrum, exercitationem molestiae?</p>
+</div>
+
+<div class="row search-item" *ngFor="let item of searchResult">
+    <div class="col-md-3">
+        <a routerLink="/product-details/{{item.id}}" class="imageBox d-flex justify-content-center align-items-center">
+        <img src="{{item.image}}" alt=""></a>
+   
+</div>
+    <div class="col-md-9">
+        <div class="productDetails">
+            <div class="productName"> <a routerLink="/product-details/{{item.id}}"> {{item.productname}}</a></div>
+        <div>Category:  {{item.category}} </div>
+        <div class="price">Price: ${{item.price}} </div>
+        <div class="color">Color: {{item.color}}</div>
+        <div>Description:
+            <p>{{item.description}}</p>
+        </div>
+      </div>
+       </div>
+    </div>
+</div>
+
+
