@@ -150,6 +150,12 @@
       "email": "dsfsd@dd.co",
       "password": "admindsaf",
       "id": 4
+    },
+    {
+      "name": "lalit kumar",
+      "email": "lalit.kumar@yopmail.com",
+      "password": "admin@123",
+      "id": 5
     }
   ],
   "cart": [
@@ -214,16 +220,28 @@
       "id": 10
     },
     {
+      "productname": "Face Wash by Olay Regenerist",
+      "price": "499",
+      "color": "Pink",
+      "category": "cream",
+      "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-1.jpg",
+      "description": "Best Cream",
+      "quantity": 1,
+      "userId": 1,
+      "productId": 4,
+      "id": 11
+    },
+    {
       "productname": "Organic Face Sunscreen",
       "price": "1499",
       "color": "Light Gray",
       "category": "Sunscreen",
       "image": "https://html.hixstudio.net/shofy-prv/shofy/assets/img/product/3/product-3.jpg",
       "description": "Best Product",
-      "quantity": 6,
+      "quantity": 5,
       "userId": 1,
       "productId": 6,
-      "id": 11
+      "id": 12
     }
   ],
   "orders": [
@@ -242,6 +260,14 @@
       "totalPrice": 11098.9,
       "userId": 1,
       "id": 3
+    },
+    {
+      "email": "admin@aicouselor.com",
+      "contact": "9958965236",
+      "address": "Gurugram",
+      "totalPrice": 75986.8,
+      "userId": 1,
+      "id": 4
     }
   ]
 }
